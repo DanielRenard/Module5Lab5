@@ -2,10 +2,7 @@ const express = require("express");
 const app = express();
 // const port = 3000;
 // const port2 = 3001;
-const ports = [3003, 3004, 3005];
-
-const testRoutes =
-require('./routes/myTestRoutes');
+const ports = [3000, 3001, 3002];
 
 const calculatorRoutes =
 require('./routes/calculatorRoutes');
@@ -17,8 +14,6 @@ require('./routes/calculatorRoutes');
 // app.get("/test", (req, res) => {
 //   res.send("Test!");
 // });
-
-app.use('/testRoutes', testRoutes);
 
 app.use('/calculator', calculatorRoutes)
 
